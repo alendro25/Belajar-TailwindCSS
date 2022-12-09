@@ -1,0 +1,11 @@
+File ada di luar folder 8.Function & Directive... Karena tidak bisa akses "npx tailwindcss init"
+
+File yg berada di luar folder meliputi :
+ 1. css
+ 2. img
+ 3. node_modules
+ 4. src
+ 5. index.html
+ 6. package.json
+ 7. package-lock.json
+ 8. tailwind.config.js

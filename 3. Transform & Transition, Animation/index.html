@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwindcss</title>
+
+    <!-- Google Font - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom TailwindCSS -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+            colors: {
+              gerald: "#bada55",
+              kopi: "#c0ffee",
+            },
+            transitionDuration: {
+              1500: "1500ms",
+              2000: "2000ms",
+            },
+            animation: {
+              "spin-slow": "spin 3s linear infinite;",
+              wiggle: "goyang 1s ease-in-out infinite",
+            },
+            keyframes: {
+              goyang: {
+                "0%, 100%": { transform: "rotate(-3deg)" },
+                "50%": { transform: "rotate(3deg)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- MyCSS -->
+    <style type="text/tailwindcss">
+      #toggle:checked ~ label div.toggle-circle {
+        @apply translate-x-3 bg-green-500;
+      }
+    </style>
+  </head>
+
+  <body class="dark:bg-slate-800 dark:text-slate-200">
+    <h1 class="text-8xl font-bold text-center">
+      Mari Belajar
+      <span
+        class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent"
+        >TailwindCSS</span
+      >
+    </h1>
+
+    <section
+      class="mb-10 bg-gradient-to-r from-indigo-200 via-red-300 to-yellow-300"
+    >
+      <h2 class="text-center text-3xl">Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="p-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+      <h2 class="text-center text-3xl bg-gerald">Sizing</h2>
+      <div class="w-32 h-32 bg-kopi">Kotak 1</div>
+    </section>
+
+    <section class="font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">
+        Belajar Mengenai Typhography pada TailwindCSS
+      </h2>
+
+      <div class="mb-4 text-lg">
+        By <span class="text-gray-700 font-semibold">Gerald A. T</span>, 1
+        Januari 2022
+      </div>
+
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet
+        <a
+          href="#"
+          class="underline font-semibold text-blue-600 hover:text-blue-400"
+          >consectetur</a
+        >
+        adipisicing elit. Accusamus consectetur illum ratione minus unde
+        pariatur magni, suscipit natus ipsa illo ipsum at reprehenderit, porro
+        eaque magnam fugiat iusto ullam dicta praesentium? Veritatis ex illo
+        molestiae magnam repellat quae quia quidem culpa dolorum quo? Eveniet a,
+        quisquam id maxime excepturi tenetur!
+      </p>
+
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque earum
+        debitis veritatis necessitatibus aut nemo totam adipisci harum doloribus
+        expedita?"
+      </blockquote>
+
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, quam
+        delectus blanditiis eaque libero nostrum ab sequi cum saepe, atque
+        laudantium quaerat qui deleniti numquam eos minus quod. Quidem, omnis!
+      </p>
+    </section>
+
+    <div
+      class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed"
+      style="
+        background-image: url('https:/source.unsplash.com/1000x600?computer');
+      "
+    >
+      <p class="p-5 text-2xl text-lime-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate
+        facere sed odio ex earum et rem eius, porro totam, illo quam, quis
+        beatae eaque provident! Necessitatibus culpa, dicta, explicabo ad sed
+        tenetur itaque corporis ea inventore perferendis ullam mollitia nam
+        quibusdam odit possimus ratione magni laudantium nobis voluptatibus
+        veniam? Perferendis dolores quas voluptatem nulla nihil blanditiis
+        error. Deserunt quod veritatis beatae nam similique ipsa consequatur
+        aspernatur nobis modi ipsum, non labore impedit distinctio, sapiente,
+        officiis cupiditate quae animi molestias. Hic et nam porro obcaecati
+        omnis possimus accusantium, reiciendis illum cumque fuga. Architecto
+        perferendis voluptatem, sapiente aliquid consectetur quod corrupti ipsa
+        laboriosam voluptate veritatis saepe eum. Deserunt molestias voluptate
+        similique, fugit perspiciatis architecto. Quis, molestiae porro quidem
+        impedit ipsam sed reiciendis sit earum ex, provident officia enim amet
+        similique magnam error eveniet ad quas molestias nostrum quia nisi
+        officiis non? Ut rerum alias exercitationem laboriosam? Possimus cum et
+        omnis accusamus dolore, mollitia quod perspiciatis id cumque praesentium
+        sunt illo minima minus sit doloremque, a consequatur aliquam inventore
+        molestiae quo. Incidunt soluta iure amet impedit tempore necessitatibus
+        corrupti a esse modi dolores quis, omnis eligendi error, consequatur,
+        corporis optio ullam quod asperiores hic aliquid. Quod, maiores delectus
+        culpa nihil voluptatibus facilis.
+      </p>
+    </div>
+
+    <div
+      class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg-center rounded-lg shadow-2xl shadow-teal-300 overflow-hidden flex"
+      style="background-image: url('./img/1.jpeg')"
+    >
+      <div
+        class="w-[200px] h-[200px] bg-white/40 m-auto backdrop-blur-lg rounded-full"
+      ></div>
+    </div>
+
+    <hr class="my-20" />
+    <!-- 6.Pseudo-class dan Dark Mode -->
+
+    <!-- Toggle Button for Dark Mode -->
+    <div>
+      <h1 class="text-center font-semibold mb-3 dark:text-slate-300">
+        Dark Mode
+      </h1>
+
+      <div class="flex justify-center">
+        <span class="text-sm mr-2 text-slate-400">Light</span>
+        <input type="checkbox" name="toggle" id="toggle" class="hidden" />
+        <label for="toggle">
+          <div
+            class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer"
+          >
+            <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+          </div>
+        </label>
+        <span class="text-sm ml-2 text-slate-400">Dark</span>
+      </div>
+    </div>
+    <!-- End of Toggle Button for Dark Mode -->
+
+    <!-- Simpan Button -->
+    <button
+      class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:hover:bg-slate-100 dark:text-slate-800 dark:hover:text-slate-900"
+    >
+      Simpan
+    </button>
+    <!-- Akhir Simpan Button -->
+
+    <div
+      class="max-w-lg -my-10 border border-slate-200 rounded-xl my-4 mx-auto p-5 shadow-md hover:bg-sky-500 group font-serif dark:bg-slate-300"
+    >
+      <h5
+        class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800"
+      >
+        My Card
+      </h5>
+      <p
+        class="group-hover:text-white selection:bg-lime-300 selection:text-slate-800 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800"
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias suscipit
+        laboriosam, mollitia quae eum aperiam assumenda. Velit nam ducimus
+        commodi ratione, excepturi ea ad, omnis beatae consequatur qui, sapiente
+        illum?
+      </p>
+    </div>
+
+    <div
+      class="max-w-lg -my-10 border border-slate-200 rounded-xl my-4 mx-auto p-5 shadow-md font-inter"
+    >
+      <form action="">
+        <label for="email">
+          <span
+            class="text-slate-700 block font-semibold after:content-['*'] after:text-pink-500 after:ml-0.5 dark:text-white"
+            >Email</span
+          >
+          <input
+            id="email"
+            type="email"
+            placeholder="Masukan email..."
+            class="px-3 py-2 mt-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer dark:placeholder:text-black"
+          />
+
+          <p
+            class="text-sm m-1 text-pink-700 invisible peer-invalid:visible dark:text-white"
+          >
+            Email tidak valid
+          </p>
+        </label>
+      </form>
+    </div>
+
+    <hr class="my-20" />
+
+    <!-- 7. Transform & Transition, Animation -->
+    <h4 class="text-center my-20 font-bold text-2xl text-slate-600">
+      Transform & Transition, Animation
+    </h4>
+
+    <div
+      class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:rotate-45 hover:translate-x-16 hover:bg-pink-500 transition origin-top-left"
+    ></div>
+
+    <div class="w-40 h-40 mx-auto rounded-lg mt-20 group">
+      <div
+        class="w-full h-full bg-green-500 rounded-lg origin-top-left group-hover:rotate-180 transition duration-2000 ease-in-out"
+      ></div>
+    </div>
+
+    <div
+      class="w-40 h-40 bg-red-500 rounded-lg mx-auto mt-20 animate-wiggle"
+    ></div>
+
+    <div class="mb-96"></div>
+
+    <script>
+      // JS Untuk Toggle Button Dark Mode
+      const checkbox = document.querySelector("#toggle");
+      const html = document.querySelector("html");
+
+      checkbox.addEventListener("click", function () {
+        checkbox.checked
+          ? html.classList.add("dark")
+          : html.classList.remove("dark");
+      });
+      // Akhir dr Toggle Button Dark Mode
+    </script>
+  </body>
+</html>
