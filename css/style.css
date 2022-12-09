@@ -1100,6 +1100,18 @@ h1 {
   background-image: url('./img/grid/7.jpeg');
 }
 
+.bg-\[url\(\'img\/grid\/1\.jpeg\'\)\] {
+  background-image: url('img/grid/1.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/img\/grid\/1\.jpeg\'\)\] {
+  background-image: url('../img/grid/1.jpeg');
+}
+
+.bg-\[url\(\'\.\/\.\/img\/grid\/1\.jpeg\'\)\] {
+  background-image: url('././img/grid/1.jpeg');
+}
+
 .from-blue-500 {
   --tw-gradient-from: #3b82f6;
   --tw-gradient-to: rgb(59 130 246 / 0);
