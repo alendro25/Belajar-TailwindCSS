@@ -1060,6 +1060,46 @@ h1 {
   background-image: url('/img/grid/7.jpeg');
 }
 
+.bg-\[url\(\'\.\/img\/grid\/1\.jpeg\'\)\] {
+  background-image: url('./img/grid/1.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/2\.jpeg\'\)\] {
+  background-image: url('./img/grid/2.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/3\.jpeg\'\)\] {
+  background-image: url('./img/grid/3.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/10\.jpeg\'\)\] {
+  background-image: url('./img/grid/10.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/5\.jpeg\'\)\] {
+  background-image: url('./img/grid/5.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/6\.jpeg\'\)\] {
+  background-image: url('./img/grid/6.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/4\.jpeg\'\)\] {
+  background-image: url('./img/grid/4.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/8\.jpeg\'\)\] {
+  background-image: url('./img/grid/8.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/9\.jpeg\'\)\] {
+  background-image: url('./img/grid/9.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/grid\/7\.jpeg\'\)\] {
+  background-image: url('./img/grid/7.jpeg');
+}
+
 .from-blue-500 {
   --tw-gradient-from: #3b82f6;
   --tw-gradient-to: rgb(59 130 246 / 0);
