@@ -1,4 +1,4 @@
 # Belajar-TailwindCSS
 
 Hasil Belajar :
-alendro25.github.io/Belajar-TailwindCSS
+https://alendro25.github.io/Belajar-TailwindCSS
