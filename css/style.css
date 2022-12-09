@@ -1020,46 +1020,6 @@ h1 {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/img\/grid\/1\.jpeg\'\)\] {
-  background-image: url('/img/grid/1.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/2\.jpeg\'\)\] {
-  background-image: url('/img/grid/2.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/3\.jpeg\'\)\] {
-  background-image: url('/img/grid/3.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/10\.jpeg\'\)\] {
-  background-image: url('/img/grid/10.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/5\.jpeg\'\)\] {
-  background-image: url('/img/grid/5.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/6\.jpeg\'\)\] {
-  background-image: url('/img/grid/6.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/4\.jpeg\'\)\] {
-  background-image: url('/img/grid/4.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/8\.jpeg\'\)\] {
-  background-image: url('/img/grid/8.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/9\.jpeg\'\)\] {
-  background-image: url('/img/grid/9.jpeg');
-}
-
-.bg-\[url\(\'\/img\/grid\/7\.jpeg\'\)\] {
-  background-image: url('/img/grid/7.jpeg');
-}
-
 .bg-\[url\(\'\.\/img\/grid\/1\.jpeg\'\)\] {
   background-image: url('./img/grid/1.jpeg');
 }
@@ -1098,18 +1058,6 @@ h1 {
 
 .bg-\[url\(\'\.\/img\/grid\/7\.jpeg\'\)\] {
   background-image: url('./img/grid/7.jpeg');
-}
-
-.bg-\[url\(\'img\/grid\/1\.jpeg\'\)\] {
-  background-image: url('img/grid/1.jpeg');
-}
-
-.bg-\[url\(\'\.\.\/img\/grid\/1\.jpeg\'\)\] {
-  background-image: url('../img/grid/1.jpeg');
-}
-
-.bg-\[url\(\'\.\/\.\/img\/grid\/1\.jpeg\'\)\] {
-  background-image: url('././img/grid/1.jpeg');
 }
 
 .from-blue-500 {
@@ -1228,11 +1176,6 @@ h1 {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
 }
 
 .text-3xl {
@@ -1761,6 +1704,11 @@ h1 {
     padding: 1rem;
   }
 
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1799,5 +1747,12 @@ h1 {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
